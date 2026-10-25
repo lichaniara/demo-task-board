@@ -1,0 +1,6 @@
+services:
+  web:
+    image: ${DOCKERHUB_USERNAME:?Set DOCKERHUB_USERNAME}/demo-task-board:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped
